@@ -1,0 +1,159 @@
+JQuery Notes:
+===============
+Source: https://www.w3schools.com/jquery/default.asp
+https://generatedata.com/generator
+https://htmlcolorcodes.com/
+
+--------------------------------------------
+Including JQuery on an HTML page
+--------------------------------------------
+<head>
+	<script src="jquery-3.6.3.min.js"></script>
+</head>
+
+or
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+--------------------------------------------
+Syntax
+--------------------------------------------
+Basic syntax is: $(selector).action()
+
+A $ sign to define/access jQuery
+A (selector) to "query (or find)" HTML elements
+A jQuery action() to be performed on the element(s)
+
+
+--------------------------------------------
+Document Ready Event
+--------------------------------------------
+$(document).ready(function(){
+
+  // jQuery methods go here...
+
+});
+
+//Short method
+$(function(){
+
+  // jQuery methods go here...
+
+});
+
+
+--------------------------------------------
+jQuery Selectors
+
+https://www.w3schools.com/jquery/jquery_selectors.asp
+--------------------------------------------
+Used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes, etc
+Based on CSS selectors - https://www.w3schools.com/cssref/css_selectors.php
+All selectors in jQuery start with the dollar sign and parentheses: $()
+
+--------------------------------------------
+The element Selectors
+--------------------------------------------
+$("p")
+
+Example:
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
+  });
+});
+
+--------------------------------------------
+The #id Selector
+--------------------------------------------
+$("#test")
+
+Example:
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#test").hide();
+  });
+});
+
+--------------------------------------------
+The .class Selector
+--------------------------------------------
+$(".test")
+
+Example:
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".test").hide();
+  });
+});
+
+
+--------------------------------------------
+jQuery Events
+
+https://www.w3schools.com/jquery/jquery_events.asp
+--------------------------------------------
+$("p").dblclick(function(){
+  $(this).hide();
+});
+
+--------------------------------------------
+$("#p1").mouseenter(function(){
+  alert("You entered p1!");
+});
+
+--------------------------------------------
+$("#p1").mouseleave(function(){
+  alert("Bye! You now leave p1!");
+});
+
+--------------------------------------------
+$("#p1").mousedown(function(){
+  alert("Mouse down over p1!");
+});
+
+--------------------------------------------
+$("#p1").mouseup(function(){
+  alert("Mouse up over p1!");
+});
+
+--------------------------------------------
+$("#p1").hover(function(){
+  alert("You entered p1!");
+},
+function(){
+  alert("Bye! You now leave p1!");
+});
+
+--------------------------------------------
+$("input").focus(function(){
+  $(this).css("background-color", "#cccccc");
+});
+
+--------------------------------------------
+$("input").blur(function(){
+  $(this).css("background-color", "#ffffff");
+});
+
+--------------------------------------------
+$("p").on("click", function(){
+  $(this).hide();
+});
+
+--------------------------------------------
+Attach multiple event handlers to a <p> element:
+$("p").on({
+  mouseenter: function(){
+    $(this).css("background-color", "lightgray");
+  },
+  mouseleave: function(){
+    $(this).css("background-color", "lightblue");
+  },
+  click: function(){
+    $(this).css("background-color", "yellow");
+  }
+});
+
+--------------------------------------------

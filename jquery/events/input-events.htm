@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Keyboard Events</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      i = 0;
+      defaultResultMessage = "Waiting for it...";
+
+      $(document).ready(function(){
+        setDefaultResultMessage();
+
+        $("#blur-text").blur(function(){
+          $("#blur-result").text("The field lost focus");
+          setTimeout(() =>  { resetBlurResult() }, 2000);
+        });
+
+        $("#change-text").change(function(){
+          $("#change-text-result").text("The input field changed");
+          setTimeout(() =>  { resetChangeTextResult() }, 2000);
+        });
+
+        $("#change-textarea").change(function(){
+          $("#change-textarea-result").text("The text area changed");
+          setTimeout(() =>  { resetChangeTextAreaResult() }, 2000);
+        });
+
+        $("#change-select").change(function(){
+          $("#change-select-result").text("The dropdown changed");
+          setTimeout(() => { resetChangeSelectResult() }, 2000);
+        });
+      });
+
+      function setDefaultResultMessage()
+      {
+        $("#blur-result").text(defaultResultMessage);
+        $("#change-text-result").text(defaultResultMessage);
+        $("#change-textarea-result").text(defaultResultMessage);
+        $("#change-select-result").text(defaultResultMessage);
+      }
+
+      function resetBlurResult()
+      {
+        $("#blur-result").text(defaultResultMessage);
+      }
+
+      function resetChangeTextResult()
+      {
+        $("#change-text-result").text(defaultResultMessage);
+      }
+
+      function resetChangeTextAreaResult()
+      {
+        $("#change-textarea-result").text(defaultResultMessage);
+      }
+
+      function resetChangeSelectResult()
+      {
+        $("#change-select-result").text(defaultResultMessage);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container m-5">
+      <h2>Input Field Events</h2>
+
+      <h3>Blur event</h3>
+      Type something then press tab: <input id="blur-text" type="text"/>
+      <p>Result: <span id="blur-result"></span></p>
+      <br>
+
+      <h3>Change Events</h3>
+      <h4>Change event on input field</h4>
+      Type something: <input id="change-text" type="text"/>
+      <p>Result: <span id="change-text-result"></span></p>
+      <br>
+
+      <h4>Change event on text area</h4>
+      <p>Type something:</p>
+      <textarea id="change-textarea" rows="4" cols="50"></textarea>
+      <p>Result: <span id="change-textarea-result"></span></p>
+      <br>
+
+      <h4>Change event on select</h4>
+      <label for="fruit">Choose a fruit: </label>
+      <select name="fruit" id="change-select">
+        <option value="apple">Apple</option>
+        <option value="orange">Orange</option>
+        <option value="pear">Pear</option>
+      </select>
+      <p>Result: <span id="change-select-result"></span></p>
+      <br>
+    </div>
+  </body>
+</html>

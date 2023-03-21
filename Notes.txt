@@ -1,0 +1,25 @@
+Frontend Tech to study
+
+HTML
+https://www.w3schools.com/html/default.asp
+
+CSS
+https://www.w3schools.com/css/default.asp
+
+Javascript
+https://www.w3schools.com/js/default.asp
+https://javascript.info/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+
+F12 to open developer tools in Firefox
+Set breakpoints in the debugger
+https://javascript.info/article/debugging-chrome/debugging/index.html
+
+jQuery
+https://www.w3schools.com/jquery/default.asp
+
+Bootstrap
+https://www.w3schools.com/bootstrap/bootstrap_ver.asp
+https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/
+
+Frameworks: Angular & React

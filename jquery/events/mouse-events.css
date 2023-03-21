@@ -1,0 +1,28 @@
+.grey-block {
+  width: 100px;
+  height: 100px;
+  background-color: #dfd3c3;
+  float: left;
+  margin-left: 5px
+}
+
+.blue-block {
+  width: 100px;
+  height: 100px;
+  background-color: #5499c7;
+  float: left;
+  margin-left: 5px
+}
+
+.green-block {
+  width: 100px;
+  height: 100px;
+  background-color: #52be80;
+  float: left;
+  margin-left: 5px
+}
+
+.clear-block {
+  clear: both;
+  height: 20px;
+}
