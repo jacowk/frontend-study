@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#set-text").click(function(){
+          $("#p-tag-text").text("Changed the text");
+        });
+
+        $("#set-html").click(function(){
+          $("#p-tag-html").html('This is some <b>bold</b> text');
+        });
+
+        $("#set-value").click(function(){
+          $("#input-tag").val("Changed the value");
+        });
+
+        $("#set-attribute").click(function(){
+          $("#p-tag-attr").attr("class", "text-danger");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container m-5">
+      <p id="p-tag-text">This is some text</p>
+      <p id="p-tag-html">This is some <u>underlined</u> text</p>
+      <input id="input-tag" type="text" value="Value from input"><br>
+      <p id="p-tag-attr" class="text-info">Let's change the attribute value here</p>
+      <button id="set-text" class="mt-1">Set Text</button>
+      <button id="set-html">Set HTML</button>
+      <button id="set-value">Set Value</button>
+      <button id="set-attribute">Set Attribute</button><br><br>
+      <a href="../index.htm" class="card-link">Back to jQuery Home</a>&nbsp;
+      <a href="../../index.htm" class="card-link">Back to Main</a>
+    </div>
+  </body>
+</html>
