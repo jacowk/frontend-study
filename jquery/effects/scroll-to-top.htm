@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Scroll To Element</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('html, body').animate({
+          scrollTop: $("#target-element").offset().top
+        }, 1000);
+
+        $("#top").click(function(){
+          $('html, body').animate({
+            scrollTop: $("#target-element").offset().top
+          }, 1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container m-5">
+      <h2>Lorem Ipsum</h2>
+      <div id="target-element">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum elit elit, ac sagittis purus interdum id. Pellentesque et nibh et sapien sollicitudin tempor condimentum eget lorem. Duis vitae risus tortor. Curabitur pulvinar congue nulla, eget ultricies arcu tristique id. Proin orci tellus, mattis eu dui ut, dignissim vulputate magna. Sed pellentesque tempor sapien vel sodales. Praesent sed lacus in neque tincidunt porttitor eget quis diam. Donec bibendum in dui in tincidunt.
+
+Sed vel egestas dolor, non aliquet neque. Phasellus ullamcorper felis tortor, id placerat ante sagittis at. Vestibulum vel libero tincidunt, consequat lorem non, finibus neque. Etiam massa arcu, eleifend id dictum eget, faucibus ac mi. Aenean luctus dolor a feugiat ullamcorper. Ut justo dolor, varius id elit eget, convallis tempor felis. Proin fringilla porta vestibulum. Mauris eget mauris in lacus dictum porttitor nec vel velit. Pellentesque sit amet enim ac elit tincidunt auctor.
+
+Nulla facilisi. Etiam tincidunt enim quis nunc pretium pharetra. Duis turpis metus, venenatis non sem nec, malesuada finibus felis. Etiam elementum ex vel velit mattis, at feugiat velit blandit. Curabitur at sem magna. Morbi sit amet hendrerit tellus, ac convallis massa. Sed efficitur lacinia justo, at mollis nibh varius at. Pellentesque luctus sollicitudin pellentesque. Aenean at posuere libero. Aliquam sit amet ultricies orci. Ut vel nunc sed dui luctus consequat ac id felis. Curabitur nec elit vitae erat accumsan consequat. Vivamus mattis ipsum tellus, ac blandit enim maximus scelerisque.
+
+Sed molestie, augue id faucibus varius, lectus ex imperdiet nulla, ac varius sem erat quis mauris. Ut nec tincidunt neque, vel fringilla quam. Mauris vel lorem dignissim, porttitor dolor vulputate, varius velit. Quisque laoreet massa vel orci semper ornare. Sed gravida magna sed tempor scelerisque. Suspendisse dignissim odio eu ultrices interdum. Ut eget nibh at ante mattis consequat. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae consequat libero. Nam egestas orci eget enim ornare sagittis. Curabitur mollis dapibus sagittis. Donec ac quam laoreet, mollis augue eu, laoreet lacus. Vivamus sollicitudin purus et sapien dapibus, in volutpat enim ullamcorper. Vivamus nec ipsum velit. Ut tristique arcu orci, ac scelerisque metus consequat vel.
+
+Maecenas tempus mattis rhoncus. Quisque euismod leo vitae eros luctus, eget gravida tortor viverra. Sed vestibulum pellentesque elementum. Curabitur ac quam magna. Vestibulum efficitur non mauris non congue. In placerat turpis in libero feugiat, eu lacinia mauris porta. Nulla tristique ipsum sed lacus gravida tincidunt. Suspendisse dictum imperdiet volutpat. Donec tincidunt tincidunt turpis vel interdum. Sed sollicitudin sem a mi hendrerit, fringilla tempor ipsum sollicitudin. Nunc eleifend eu turpis sed varius. Morbi laoreet metus sed lacinia viverra. Aenean id cursus arcu.
+
+Quisque bibendum libero mi, et ornare lectus posuere sed. Cras feugiat eleifend eros, sed pretium risus efficitur id. Nunc semper condimentum sem, id imperdiet erat mattis ac. Pellentesque fringilla nunc ut quam iaculis, sit amet egestas purus feugiat. Suspendisse potenti. Aenean quis ullamcorper purus. Praesent tincidunt placerat elit, quis euismod quam laoreet sed. Morbi mi eros, semper eget volutpat et, accumsan quis velit. Donec aliquam volutpat est ut iaculis. Aliquam quis urna sit amet lacus pulvinar interdum. Etiam eget tellus id ligula egestas viverra. Cras et rutrum diam. Donec vel turpis at dui aliquet commodo.
+
+Sed ornare velit nec massa ultricies posuere. Duis dignissim nisi felis, eu rhoncus ante finibus vitae. Ut pellentesque tincidunt mauris ac sagittis. Sed ultricies tincidunt ipsum sit amet tempor. Sed laoreet, ligula quis pulvinar interdum, justo lorem pretium odio, ac dapibus nulla libero id justo. Mauris vulputate justo sit amet felis cursus condimentum. Vivamus sodales justo eu turpis hendrerit posuere. Sed eget diam risus. Donec rutrum blandit nisl. Proin tincidunt, dolor quis feugiat faucibus, enim felis eleifend libero, in tincidunt sem orci a augue. Mauris gravida ultricies velit. Morbi vitae tristique dolor, et cursus ligula. Phasellus at massa aliquet, dapibus est eu, ullamcorper quam.
+
+Curabitur eget ante ut nibh elementum tempor mollis quis purus. Vivamus faucibus nec elit egestas aliquet. Donec vehicula sem imperdiet, luctus quam vel, auctor enim. Nam nec ornare purus. Duis eget felis eget lorem tempus egestas eget quis turpis. Cras nisi metus, vehicula eget purus ut, elementum volutpat dolor. Nullam eget justo vestibulum, eleifend elit a, tempor ipsum. Phasellus nec tincidunt justo. Nunc hendrerit ullamcorper velit, ac tincidunt turpis luctus a. Cras eleifend bibendum metus, eu hendrerit nisi euismod nec. Mauris molestie vulputate nisi tincidunt ornare. Nullam eu volutpat nisi. Vivamus tempor blandit ornare. Aenean sapien lacus, efficitur id imperdiet id, ullamcorper ut lectus. Integer at facilisis risus, ut feugiat erat.
+
+Aliquam erat volutpat. In in malesuada massa, eget commodo risus. Nullam porttitor nulla odio. In hac habitasse platea dictumst. Aenean placerat enim eget commodo convallis. Vestibulum augue nulla, elementum sit amet elementum a, molestie nec nisl. Praesent vel posuere augue. Integer sit amet sem sit amet arcu pretium vestibulum non quis magna. Aliquam nec neque luctus, condimentum erat ut, malesuada odio. Nam pellentesque turpis quis urna gravida, quis dignissim urna feugiat. Curabitur varius est vitae velit interdum pharetra. Proin cursus enim non purus dapibus dictum. Nam blandit nec turpis id placerat.
+
+Nulla facilisi. Aenean et tempus risus. Aenean mattis quam sit amet turpis congue, et tempus magna porttitor. Cras fermentum est vitae feugiat venenatis. Morbi sagittis pulvinar velit, ac semper nibh vestibulum vel. Curabitur eu porttitor sem. Fusce pellentesque mauris erat, non blandit magna consequat eleifend. Ut interdum quam a erat lacinia cursus eu eget orci. Nam eu ornare dolor. Vestibulum nec lectus vitae erat auctor hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+
+      <br><br>
+      <a id="top" href="#" class="card-link">Top</a><br><br>
+      <a href="../index.htm" class="card-link">Back to jQuery Home</a>&nbsp;&nbsp;
+      <a href="../../index.htm" class="card-link">Back to Main</a>
+    </div>
+  </body>
+</html>
